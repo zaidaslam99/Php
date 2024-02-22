@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More About Forms</title>
+  </head>
+  <body>
+    <form action="index.php" method="POST">
+      <!-- Getting the Username -->
+      <label for="username">Username: </label>
+      <input
+        type="text"
+        name=""
+        minlength="6"
+        maxlength="15"
+        id="username"
+        placeholder="username"
+        required
+      />
+      <br />
+
+      <!-- Getting the Password -->
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name=""
+        id="password"
+        min="6"
+        maxlength="15"
+        required
+      /><br />
+
+      <!-- Getting the email -->
+      <label for="password">Email: </label>
+      <input type="email" name="" id="email" placeholder="email" /><br />
+
+      <!-- Getting the phone number -->
+      <label for="phone">Phone Number</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="555-555-5555"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+      <br />
+
+      <!-- Getting birthday -->
+      <label for="bday">Birthday:</label>
+      <input type="date" id="bday" /> <br />
+
+      <!-- Getting the QTY -->
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" min="0" max="99" value="1" />
+
+      <!-- Radio Buttons -->
+      <label for="title">title</label>
+      <label for="Mr.">Mr.</label>
+      <input type="radio" id="Mr." value="Mr." name="title" />
+
+      <label for="Mrs.">Mrs.</label>
+      <input type="radio" id="Mrs." value="Mrs." name="title" />
+      <label for="PhD.">PhD.</label>
+      <input type="radio" id="PhD." value="PhD." name="title" />
+      <br />
+
+      <input type="submit" value="submit" /><br />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>
